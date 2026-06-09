@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+/* Título */
+.equipe h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Container principal */
+.container-usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagens */
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Textos */
+.card h2 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    color: #0077cc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Botão */
+.card button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #005fa3;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
