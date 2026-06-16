@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade CSS Animation</title>
+
+    <style>
+        @keyframes animacaoBotao {
+            0% {
+                left: 0px;
+                background-color: blue;
+            }
+
+            50% {
+                left: 300px;
+                background-color: green;
+            }
+
+            100% {
+                left: 0px;
+                background-color: red;
+            }
+        }
+
+        button {
+            position: relative;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            animation: animacaoBotao 4s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <button>Clique Aqui</button>
+
+</body>
+</html>
