@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Wallyson de Melo, estudante de desenvolvimento web.">
+    <title>Wallyson de Melo | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#inicio" class="logo">W<span>.</span></a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <p class="eyebrow">PORTFÓLIO PESSOAL</p>
+                <h1>Olá, eu sou<br><span>Wallyson de Melo.</span></h1>
+                <h2>Estudante de desenvolvimento web</h2>
+                <p class="intro">
+                    Estou aprendendo a criar sites e desenvolvendo minhas
+                    habilidades em programação, um projeto de cada vez.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projetos" class="button">Ver projetos</a>
+                    <a href="#sobre" class="button button-outline">Sobre mim</a>
+                </div>
+            </div>
+
+            <div class="photo-container">
+                <img src="e99b01ce-7de7-40ff-8749-7b0906d54742.png"
+                     alt="Foto de Wallyson de Melo"
+                     class="profile-photo">
+            </div>
+        </section>
+
+        <section class="section" id="sobre">
+            <p class="eyebrow">UM POUCO SOBRE MIM</p>
+            <h2>Sobre mim</h2>
+            <div class="section-card">
+                <p>
+                    Sou estudante da área de tecnologia e tenho conhecimentos
+                    em HTML e CSS. Atualmente, estou aprendendo JavaScript e
+                    desenvolvendo minhas habilidades em programação.
+                </p>
+                <p>
+                    Ainda enfrento algumas dificuldades durante o aprendizado,
+                    mas busco evoluir constantemente por meio dos estudos e da
+                    prática, adquirindo experiência com novos projetos.
+                </p>
+                <p>
+                    Ainda estou descobrindo qual caminho da tecnologia quero
+                    seguir, e este portfólio faz parte dessa jornada.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="habilidades">
+            <p class="eyebrow">O QUE ESTOU APRENDENDO</p>
+            <h2>Minhas habilidades</h2>
+
+            <div class="skills">
+                <article class="skill-card">
+                    <span class="skill-number">01</span>
+                    <h3>HTML</h3>
+                    <p>Estruturação de páginas para a web.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">02</span>
+                    <h3>CSS</h3>
+                    <p>Estilização, cores e organização dos elementos.</p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">03</span>
+                    <h3>JavaScript</h3>
+                    <p>Em aprendizado, explorando interatividade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projetos">
+            <p class="eyebrow">TRABALHOS DO CURSO</p>
+            <h2>Meus projetos</h2>
+            <p class="section-description">
+                Alguns dos trabalhos que desenvolvi durante meus estudos.
+            </p>
+
+            <div class="projects">
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>PROJETO 01</span>
+                        <span class="project-tag">Figma</span>
+                    </div>
+                    <h3>Projeto de design</h3>
+                    <p>
+                        Trabalho desenvolvido no Figma durante o curso,
+                        explorando a criação e organização de uma interface.
+                    </p>
+                    <a href="https://www.figma.com/proto/AHEeYjSml90x0lzaq4rLzX?node-id=0-1&t=V2i5XCeSrQ5glYRg-6"
+                       target="_blank" rel="noopener noreferrer">
+                        Ver projeto ↗
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>PROJETO 02</span>
+                        <span class="project-tag">Canva</span>
+                    </div>
+                    <h3>Projeto visual</h3>
+                    <p>
+                        Trabalho realizado no Canva como parte das atividades
+                        desenvolvidas durante o curso.
+                    </p>
+                    <a href="https://canva.link/9a2xmufkd08o3hl"
+                       target="_blank" rel="noopener noreferrer">
+                        Ver projeto ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contato">
+            <p class="eyebrow">VAMOS CONVERSAR</p>
+            <h2>Entre em contato</h2>
+            <p class="section-description">
+                Quer falar comigo sobre tecnologia ou meus projetos?
+                Você pode me enviar um e-mail.
+            </p>
+
+            <a class="button"
+               href="mailto:wallyson29@gmail.com">
+                Enviar e-mail
+            </a>
+
+            <form id="contact-form" class="contact-form">
+                <label for="name">Seu nome</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Digite seu nome" required>
+
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" name="message" rows="4"
+                          placeholder="Escreva sua mensagem" required></textarea>
+
+                <button class="button" type="submit">
+                    Preparar e-mail
+                </button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#inicio" class="logo">W<span>.</span></a>
+        <p>Desenvolvido por Wallyson de Melo.</p>
+        <p>© <span id="year"></span> — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
