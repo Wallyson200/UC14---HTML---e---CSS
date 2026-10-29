@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f7;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+h1 {
+    text-align: center;
+    color: #285a9f;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #9bbff0;
+    border-color: #285a9f;
+}
+
+.campo-notas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #285a9f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #194276;
+}
+
+.botao-limpar {
+    background-color: #e2e7ed;
+    color: #333;
+}
+
+.botao-limpar:hover {
+    background-color: #cbd3dd;
+}
+
+#resultado {
+    margin-top: 22px;
+    padding: 15px;
+    background-color: #f4f7fb;
+    border-left: 4px solid #285a9f;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+#resultado p {
+    margin-bottom: 5px;
+}
+
+#resultado .media {
+    font-size: 22px;
+    font-weight: bold;
+    color: #285a9f;
+    margin-top: 8px;
+}
+
+#resultado .situacao {
+    font-weight: bold;
+}
+
+#resultado .erro {
+    color: #c62828;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 20px;
+    }
+
+    .campo-notas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
